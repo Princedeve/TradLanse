@@ -1,7 +1,7 @@
 {
   "name": "tradlanse",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
@@ -9,7 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "AI Trading Research Assistant",
+  "engines": {
+    "node": "22.16.0"
+  },
   "dependencies": {
     "@google/genai": "^2.22.0",
     "dotenv": "^17.4.2",
