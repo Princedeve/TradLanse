@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TradeLens - AI Trading Research Assistant</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <h1 class="fw-bold">
+                TradeLens
+            </h1>
+
+            <p class="text-muted">
+                AI Trading Research Assistant
+            </p>
+
+        </div>
+
+
+        <div class="card shadow-sm p-4 mx-auto" style="max-width: 800px;">
+
+            <h3 class="mb-3">
+                Ask a trading research question
+            </h3>
+
+            <form action="/analyze" method="POST">
+
+                <div class="mb-3">
+
+                    <textarea
+                        name="question"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Example: Does buying NIFTY after a 1% fall work better during high volatility?"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">
+                    Analyze Question
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
